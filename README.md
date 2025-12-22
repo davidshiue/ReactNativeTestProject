@@ -1,3 +1,73 @@
+這是一個 [**React Native**](https://reactnative.dev) 的專案
+
+# React Native環境架設(React Native Cli)
+
+```sh
+npx @react-native-community/cli init AwesomeProject
+```
+
+## 可能需要手動安裝 pods
+
+```sh
+cd AwesomeProject/ios //手動安裝 pods
+pod install  //手動安裝 pods
+cd ..
+```
+## Buid and Run
+```sh
+yarn ios //實機
+yarn ios --simulator "iPhone 16 Pro" //simulator
+```
+
+# Stack Navigation（堆疊導航） 
+
+以下是將你的程式碼升級為包含 Stack Navigation（堆疊導航） 的步驟：
+
+1. 安裝必要的套件
+請在你的專案目錄下執行以下指令：
+Bash
+
+### 安裝核心套件
+```sh
+npm install @react-navigation/native @react-navigation/stack
+```
+### 安裝導航所需的依賴（如果你還沒裝的話）
+```sh
+npm install react-native-screens react-native-safe-area-context
+```
+在 iOS 上，每當你安裝包含原生代碼的套件後，必須更新 Pods：
+Bash
+
+```sh
+cd ios
+pod install
+cd ..
+```
+
+# 手势处理
+安装负责手势处理的库（react-native-gesture-handler）
+```sh
+react-native link react-native-gesture-handler
+cd ios
+pod install
+cd ..
+```
+检查配置：
+确保在你的项目中正确配置了 react-native-gesture-handler：
+在 index.js 或 App.js 的顶部导入手势处理：
+```sh
+import 'react-native-gesture-handler';
+```
+
+清除缓存：
+有时，问题可能与缓存数据有关。清除缓存：
+```sh
+npm start -- --reset-cache
+```
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
