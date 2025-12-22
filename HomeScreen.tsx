@@ -15,6 +15,10 @@ export default function HomeScreen({ navigation }: Props) {
         title="前往細節頁面"
         onPress={() => navigation.navigate('Details')} 
       />
+      <Button
+        title="前往Flex佈局"
+        onPress={() => navigation.navigate('FlexBox')} 
+      />
     </View>
   );
 }

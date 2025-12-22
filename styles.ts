@@ -3,9 +3,7 @@ import { Platform, StyleSheet, StatusBar } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: '#fff'
+    padding: 20,
   },
   title: {
     fontSize: 26,

@@ -18,6 +18,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from "./HomeScreen.tsx"
 import DetailsScreen from "./DetailsScreen.tsx"
+import FlexBoxScreen from "./FlexBoxScreen.tsx"
 
 // 建立 Stack 導航器
 const Stack = createStackNavigator();
@@ -46,6 +47,11 @@ function App() {
             name="Details" 
             component={DetailsScreen} 
             options={{ title: '內容細節' }}
+          />
+          <Stack.Screen 
+            name="FlexBox" 
+            component={FlexBoxScreen} 
+            options={{ title: 'FlexBox 佈局' }}
           />
         </Stack.Navigator>
       </NavigationContainer>
