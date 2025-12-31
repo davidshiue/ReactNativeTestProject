@@ -65,6 +65,51 @@ import 'react-native-gesture-handler';
 npm start -- --reset-cache
 ```
 
+# TableView
+
+## 使用 ChevronRight 圖標
+
+```sh
+yarn add lucide-react-native
+```
+
+安裝必要的依賴
+在終端機執行以下指令：
+
+## 安裝 react-native-svg
+```sh
+npm install react-native-svg
+```
+### 如果你是使用 iOS 模擬器或實體機，必須執行 pod install
+```sh
+cd ios && pod install && cd ..
+```
+### 重啟 Metro Bundler (非常重要)
+
+當你安裝了包含「原生程式碼 (Native Code)」的套件（如 react-native-svg）時，僅僅存檔是不夠的，你必須重新編譯 App：
+
+關閉目前的終端機視窗。
+
+重新啟動 Metro：npx react-native start --reset-cache
+
+在另一個視窗重新啟動 App：
+
+iOS: npx react-native run-ios
+
+Android: npx react-native run-android
+
+
+
+# 學習資源
+
+## 英文官方網站 (核心文件/最新資訊)：
+* https://reactnative.dev/
+
+## 中文社群網站 (非官方，但常被使用)：
+* https://reactnative.cn/
+* https://rn.nodejs.cn/
+
+
 
 
 

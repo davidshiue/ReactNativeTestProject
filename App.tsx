@@ -20,6 +20,9 @@ import HomeScreen from "./HomeScreen.tsx"
 import DetailsScreen from "./DetailsScreen.tsx"
 import FlexBoxScreen from "./FlexBoxScreen.tsx"
 import FlexDirectionScreen from "./FlexDirectionScreen.tsx"
+import ScrollViewScreen from "./ScrollViewScreen.tsx"
+import FlatListScreen from "./FlatListScreen.tsx"
+import TableViewScreen from "./TableViewScreen.tsx"
 
 // 建立 Stack 導航器
 const Stack = createStackNavigator();
@@ -58,6 +61,21 @@ function App() {
             name="FlexDirection" 
             component={FlexDirectionScreen} 
             options={{ title: 'FlexDirection 佈局' }}
+          />
+          <Stack.Screen 
+            name="ScrollView" 
+            component={ScrollViewScreen} 
+            options={{ title: 'ScrollView 頁面' }}
+          />
+          <Stack.Screen 
+            name="FlatList" 
+            component={FlatListScreen} 
+            options={{ title: 'FlatList 頁面' }}
+          />
+          <Stack.Screen 
+            name="TableView" 
+            component={TableViewScreen} 
+            options={{ title: 'FlatList 頁面' }}
           />
         </Stack.Navigator>
       </NavigationContainer>

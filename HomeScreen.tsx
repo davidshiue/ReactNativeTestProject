@@ -23,6 +23,18 @@ export default function HomeScreen({ navigation }: Props) {
         title="前往FlexDirection佈局"
         onPress={() => navigation.navigate('FlexDirection')} 
       />
+      <Button
+        title="前往ScrollView 頁面"
+        onPress={() => navigation.navigate('ScrollView')} 
+      />
+      <Button
+        title="FlatList 頁面"
+        onPress={() => navigation.navigate('FlatList')} 
+      />
+      <Button
+        title="TableView 頁面"
+        onPress={() => navigation.navigate('TableView')} 
+      />
     </View>
   );
 }
